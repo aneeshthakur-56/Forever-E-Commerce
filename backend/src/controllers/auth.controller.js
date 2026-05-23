@@ -2,7 +2,7 @@ import jwt from "jsonwebtoken";
 import apiHandler from "../utils/apiHandler.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { ApiError } from "../utils/ApiError.js";
-import User from "../models/user.model.js";
+import User from "../models/User.model.js";
 import bcrypt from "bcrypt";
 
 const TOKEN_EXPIRY = "7d";
