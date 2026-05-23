@@ -1,10 +1,10 @@
 import { uploadToCloudinary } from "../config/cloudinary.js";
 import apiHandler from "../utils/apiHandler.js";
-import Product from "../models/product.model.js";
+import Product from "../models/Product.model.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import { ApiError } from "../utils/ApiError.js";
-import User from "../models/user.model.js";
-import Order from "../models/order.model.js";
+import User from "../models/User.model.js";
+import Order from "../models/Order.model.js";
 
 export const addProduct = apiHandler(async (req, res) => {
   const {

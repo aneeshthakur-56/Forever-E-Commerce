@@ -1,6 +1,6 @@
 import apiHandler from "../utils/apiHandler.js";
-import Order from "../models/order.model.js";
-import User from "../models/user.model.js";
+import Order from "../models/Order.model.js";
+import User from "../models/User.model.js";
 import { ApiError } from "../utils/ApiError.js";
 import { ApiResponse } from "../utils/ApiResponse.js";
 import crypto from "crypto";
