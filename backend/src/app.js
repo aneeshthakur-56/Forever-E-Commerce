@@ -28,8 +28,13 @@ app.use(cookieParser());
 app.use("/api/auth", authRouter);
 app.use("/api/user", userProfileRouter);
 app.use("/api/product", productRouter);
-app.use("/api/cart",cartRouter)
-app.use("/api/order",orderRouter)
+app.use("/api/cart", cartRouter);
+app.use("/api/order", orderRouter);
+
+app.get("/", (req, res) => {
+  res.send("API Running Successfully");
+});
+
 app.use((err, req, res, next) => {
   return res.status(err.statusCode || 500).json({
     success: false,
